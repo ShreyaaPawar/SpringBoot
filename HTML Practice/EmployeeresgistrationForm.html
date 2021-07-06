@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration Form</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap');
+
+        body {
+            font-family: 'Bona Nova', serif;
+        }
+
+        h2 {
+            color: crimson;
+        }
+
+        table {
+            border: 2px solid black;
+            border-collapse: collapse;
+            background-color: rgb(231, 213, 138);
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        body {
+            background-color: rgb(153, 178, 179);
+            padding-top: 25px;
+        }
+
+        hr {
+            border: 1px solid rgb(149, 138, 197);
+        }
+
+        input[type=submit]{
+            border: none;
+            background-color: rgb(202, 106, 125);
+            padding: 10px 13px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <table align="center">
+        <form action="">
+            <tr>
+                <td colspan="2">
+                    <center>
+                        <h2>Employee Registration Form</h2>
+                    </center>
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>First Name: </td>
+                <td><input type="text" name="firstName" placeholder="Firstname" required></td>
+            </tr>
+            <tr>
+                <td>Middle Name: </td>
+                <td><input type="text" name="middleName" placeholder="Middlename" required></td>
+            </tr>
+            <tr>
+                <td>Last Name: </td>
+                <td><input type="text" name="lastName" placeholder="Lastname" required></td>
+            </tr>
+            <tr>
+                <td>Courses: </td>
+                <td>
+                    <select>
+                        <option value="Courses">Courses</option>
+                        <option value="BBA">BBA</option>
+                        <option value="Btech">Btech</option>
+                        <option value="MSC">MSC</option>
+                        <option value="Mtech">Mtech</option>
+                        <option value="MBA">MBA</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Gender: </td>
+                <td>
+                    <input type="radio" name="gender" value="male" required>Male</input>
+                    <input type="radio" name="gender" value="female" required>Female</input>
+                    <input type="radio" name="gender" value="other" required>Other</input>
+                </td>
+            </tr>
+            <tr>
+                <td>Phone Number: </td>
+                <td><input type="number" name="number" required></td>
+            </tr>
+            <tr>
+                <td>Current Address: </td>
+                <td><textarea name="address" cols="30" rows="3"></textarea></td>
+            </tr>
+            <tr>
+                <td>Email: </td>
+                <td><input type="email" name="emailId" required></td>
+            </tr>
+            <tr>
+                <td>Documents: </td>
+                <td><input type="file" name="document"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" name="submit" value="Submit"></td>
+            </tr>
+        </form>
+    </table>
+</body>
+
+</html>
